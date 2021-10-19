@@ -20,7 +20,7 @@ c=r.content
 
 soup=BeautifulSoup(c,"html.parser")
 
-
+#Find Items
 all=soup.find_all("div",{"class":"lead-head"})
 for item in all:
     TwitterBot.update_status(item.find_all("h1")[0].text+' '+"#zeenews"+"#newsofday")

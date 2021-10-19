@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-# Credentials to access Twitter's APIs
+# Credentials to access the Twitter APIs
 ACCESS_TOKEN    = 'paste your access token here'
 ACCESS_SECRET   = 'paste your access secret here'
 CONSUMER_KEY    = 'paste your consumer key here'

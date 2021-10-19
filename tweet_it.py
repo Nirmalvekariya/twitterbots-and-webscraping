@@ -3,9 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-
-
-# Credentials to access Twitter API
+# Credentials to access Twitter APIs
 ACCESS_TOKEN    = 'paste your access token here'
 ACCESS_SECRET   = 'paste your access secret here'
 CONSUMER_KEY    = 'paste your consumer key here'
@@ -16,7 +14,7 @@ Auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 Auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 TwitterBot = API(Auth)
 
-#getting cotents from website
+
 r=requests.get("http://zeenews.india.com/")
 c=r.content
 
